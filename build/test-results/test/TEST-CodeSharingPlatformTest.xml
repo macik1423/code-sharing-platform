@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CodeSharingPlatformTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-12-30T10:03:47" hostname="WCOR0705" time="15.784">
+  <properties/>
+  <testcase name="start" classname="CodeSharingPlatformTest" time="15.784"/>
+  <system-out><![CDATA[?[1;31m
+Start test 1?[0m
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.3.RELEASE)
+
+2020-12-30 11:03:48.417  INFO 20776 --- [    Test worker] platform.CodeSharingPlatform             : Starting CodeSharingPlatform on WCOR0705 with PID 20776 (started by KowalikM in C:\Users\kowalikm\IdeaProjects\Code Sharing Platform\Code Sharing Platform\task)
+2020-12-30 11:03:48.426  INFO 20776 --- [    Test worker] platform.CodeSharingPlatform             : No active profile set, falling back to default profiles: default
+2020-12-30 11:03:49.505  INFO 20776 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-30 11:03:49.568  INFO 20776 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52ms. Found 1 JPA repository interfaces.
+2020-12-30 11:03:50.130  INFO 20776 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-12-30 11:03:50.130  INFO 20776 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-30 11:03:50.130  INFO 20776 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-30 11:03:50.271  INFO 20776 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-30 11:03:50.271  INFO 20776 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1780 ms
+2020-12-30 11:03:50.411  INFO 20776 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-30 11:03:50.614  INFO 20776 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-30 11:03:50.614  INFO 20776 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:../snippets'
+2020-12-30 11:03:50.802  INFO 20776 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-30 11:03:50.864  INFO 20776 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-30 11:03:50.927  WARN 20776 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-30 11:03:50.942  INFO 20776 --- [         task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-12-30 11:03:51.302  INFO 20776 --- [         task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-30 11:03:51.552  INFO 20776 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-30 11:03:52.390  INFO 20776 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-30 11:03:52.406  INFO 20776 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-30 11:03:52.593  INFO 20776 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-30 11:03:52.656  INFO 20776 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-12-30 11:03:52.656  INFO 20776 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-30 11:03:52.984  INFO 20776 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-30 11:03:53.000  INFO 20776 --- [    Test worker] platform.CodeSharingPlatform             : Started CodeSharingPlatform in 5.03 seconds (JVM running for 5.865)
+2020-12-30 11:03:53.339  INFO 20776 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-30 11:03:53.340  INFO 20776 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-30 11:03:53.348  INFO 20776 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+?[1;31m
+Start test 2?[0m
+create Code{code='public static void ...', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 3?[0m
+get code Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 4?[0m
+get code Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 5?[0m
+get latest
+Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 6?[0m
+get latest
+Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 7?[0m
+create Code{code='class Code { ...', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 8?[0m
+get code Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 9?[0m
+get code Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 10?[0m
+get code Code{code='class Code { ...', date=2020-12-30T11:03:54.158660, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 11?[0m
+get code Code{code='class Code { ...', date=2020-12-30T11:03:54.158660, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 12?[0m
+get latest
+Code{code='class Code { ...', date=2020-12-30T11:03:54.158660, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 13?[0m
+get latest
+Code{code='class Code { ...', date=2020-12-30T11:03:54.158660, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 14?[0m
+create Code{code='Snippet #3', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 15?[0m
+create Code{code='Snippet #4', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 16?[0m
+create Code{code='Snippet #5', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 17?[0m
+create Code{code='Snippet #6', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 18?[0m
+create Code{code='Snippet #7', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 19?[0m
+create Code{code='Snippet #8', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 20?[0m
+create Code{code='Snippet #9', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 21?[0m
+create Code{code='Snippet #10', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 22?[0m
+create Code{code='Snippet #11', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 23?[0m
+create Code{code='Snippet #12', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 24?[0m
+create Code{code='Snippet #13', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 25?[0m
+create Code{code='Snippet #14', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 26?[0m
+get code Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 27?[0m
+get code Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 28?[0m
+get code Code{code='class Code { ...', date=2020-12-30T11:03:54.158660, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 29?[0m
+get code Code{code='class Code { ...', date=2020-12-30T11:03:54.158660, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 30?[0m
+get code Code{code='Snippet #3', date=2020-12-30T11:03:54.257394, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 31?[0m
+get code Code{code='Snippet #3', date=2020-12-30T11:03:54.257394, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 32?[0m
+get code Code{code='Snippet #4', date=2020-12-30T11:03:54.272354, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 33?[0m
+get code Code{code='Snippet #4', date=2020-12-30T11:03:54.272354, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 34?[0m
+get code Code{code='Snippet #5', date=2020-12-30T11:03:54.289309, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 35?[0m
+get code Code{code='Snippet #5', date=2020-12-30T11:03:54.289309, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 36?[0m
+get code Code{code='Snippet #6', date=2020-12-30T11:03:54.299283, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 37?[0m
+get code Code{code='Snippet #6', date=2020-12-30T11:03:54.299283, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 38?[0m
+get code Code{code='Snippet #7', date=2020-12-30T11:03:54.310254, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 39?[0m
+get code Code{code='Snippet #7', date=2020-12-30T11:03:54.310254, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 40?[0m
+get code Code{code='Snippet #8', date=2020-12-30T11:03:54.324215, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 41?[0m
+get code Code{code='Snippet #8', date=2020-12-30T11:03:54.324215, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 42?[0m
+get code Code{code='Snippet #9', date=2020-12-30T11:03:54.339175, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 43?[0m
+get code Code{code='Snippet #9', date=2020-12-30T11:03:54.339175, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 44?[0m
+get code Code{code='Snippet #10', date=2020-12-30T11:03:54.352140, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 45?[0m
+get code Code{code='Snippet #10', date=2020-12-30T11:03:54.352140, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 46?[0m
+get code Code{code='Snippet #11', date=2020-12-30T11:03:54.369094, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 47?[0m
+get code Code{code='Snippet #11', date=2020-12-30T11:03:54.369094, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 48?[0m
+get code Code{code='Snippet #12', date=2020-12-30T11:03:54.389042, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 49?[0m
+get code Code{code='Snippet #12', date=2020-12-30T11:03:54.389042, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 50?[0m
+get code Code{code='Snippet #13', date=2020-12-30T11:03:54.405996, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 51?[0m
+get code Code{code='Snippet #13', date=2020-12-30T11:03:54.405996, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 52?[0m
+get code Code{code='Snippet #14', date=2020-12-30T11:03:54.413975, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 53?[0m
+get code Code{code='Snippet #14', date=2020-12-30T11:03:54.413975, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 54?[0m
+get latest
+Code{code='Snippet #14', date=2020-12-30T11:03:54.413975, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #13', date=2020-12-30T11:03:54.405996, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #12', date=2020-12-30T11:03:54.389042, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #11', date=2020-12-30T11:03:54.369094, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #10', date=2020-12-30T11:03:54.352140, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #9', date=2020-12-30T11:03:54.339175, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #8', date=2020-12-30T11:03:54.324215, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #7', date=2020-12-30T11:03:54.310254, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #6', date=2020-12-30T11:03:54.299283, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #5', date=2020-12-30T11:03:54.289309, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #4', date=2020-12-30T11:03:54.272354, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #3', date=2020-12-30T11:03:54.257394, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='class Code { ...', date=2020-12-30T11:03:54.158660, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 55?[0m
+get latest
+Code{code='Snippet #14', date=2020-12-30T11:03:54.413975, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #13', date=2020-12-30T11:03:54.405996, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #12', date=2020-12-30T11:03:54.389042, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #11', date=2020-12-30T11:03:54.369094, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #10', date=2020-12-30T11:03:54.352140, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #9', date=2020-12-30T11:03:54.339175, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #8', date=2020-12-30T11:03:54.324215, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #7', date=2020-12-30T11:03:54.310254, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #6', date=2020-12-30T11:03:54.299283, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #5', date=2020-12-30T11:03:54.289309, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #4', date=2020-12-30T11:03:54.272354, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #3', date=2020-12-30T11:03:54.257394, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='class Code { ...', date=2020-12-30T11:03:54.158660, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 56?[0m
+2020-12-30 11:03:55.396  INFO 20776 --- [       Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-30 11:03:55.396  INFO 20776 --- [       Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-30 11:03:55.396  INFO 20776 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-30 11:03:55.631  INFO 20776 --- [       Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.3.RELEASE)
+
+2020-12-30 11:03:55.678  INFO 20776 --- [    Test worker] platform.CodeSharingPlatform             : Starting CodeSharingPlatform on WCOR0705 with PID 20776 (started by KowalikM in C:\Users\kowalikm\IdeaProjects\Code Sharing Platform\Code Sharing Platform\task)
+2020-12-30 11:03:55.678  INFO 20776 --- [    Test worker] platform.CodeSharingPlatform             : No active profile set, falling back to default profiles: default
+2020-12-30 11:03:55.928  INFO 20776 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-30 11:03:55.928  INFO 20776 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7ms. Found 1 JPA repository interfaces.
+2020-12-30 11:03:56.021  INFO 20776 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-12-30 11:03:56.021  INFO 20776 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-30 11:03:56.021  INFO 20776 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-30 11:03:56.053  INFO 20776 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-30 11:03:56.053  INFO 20776 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 375 ms
+2020-12-30 11:03:56.099  INFO 20776 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2020-12-30 11:03:56.109  INFO 20776 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2020-12-30 11:03:56.109  INFO 20776 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:../snippets'
+2020-12-30 11:03:56.152  INFO 20776 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-30 11:03:56.156  INFO 20776 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-30 11:03:56.170  INFO 20776 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-30 11:03:56.198  WARN 20776 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-30 11:03:56.245  INFO 20776 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-30 11:03:56.245  INFO 20776 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-30 11:03:56.390  INFO 20776 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-30 11:03:56.406  INFO 20776 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-12-30 11:03:56.407  INFO 20776 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-30 11:03:56.438  INFO 20776 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-30 11:03:56.444  INFO 20776 --- [    Test worker] platform.CodeSharingPlatform             : Started CodeSharingPlatform in 0.78 seconds (JVM running for 9.303)
+?[1;31m
+Start test 57?[0m
+2020-12-30 11:03:56.451  INFO 20776 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-30 11:03:56.451  INFO 20776 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-30 11:03:56.455  INFO 20776 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+get code Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 58?[0m
+get code Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 59?[0m
+get code Code{code='class Code { ...', date=2020-12-30T11:03:54.158660, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 60?[0m
+get code Code{code='class Code { ...', date=2020-12-30T11:03:54.158660, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 61?[0m
+get code Code{code='Snippet #3', date=2020-12-30T11:03:54.257394, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 62?[0m
+get code Code{code='Snippet #3', date=2020-12-30T11:03:54.257394, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 63?[0m
+get code Code{code='Snippet #4', date=2020-12-30T11:03:54.272354, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 64?[0m
+get code Code{code='Snippet #4', date=2020-12-30T11:03:54.272354, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 65?[0m
+get code Code{code='Snippet #5', date=2020-12-30T11:03:54.289309, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 66?[0m
+get code Code{code='Snippet #5', date=2020-12-30T11:03:54.289309, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 67?[0m
+get code Code{code='Snippet #6', date=2020-12-30T11:03:54.299283, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 68?[0m
+get code Code{code='Snippet #6', date=2020-12-30T11:03:54.299283, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 69?[0m
+get code Code{code='Snippet #7', date=2020-12-30T11:03:54.310254, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 70?[0m
+get code Code{code='Snippet #7', date=2020-12-30T11:03:54.310254, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 71?[0m
+get code Code{code='Snippet #8', date=2020-12-30T11:03:54.324215, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 72?[0m
+get code Code{code='Snippet #8', date=2020-12-30T11:03:54.324215, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 73?[0m
+get code Code{code='Snippet #9', date=2020-12-30T11:03:54.339175, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 74?[0m
+get code Code{code='Snippet #9', date=2020-12-30T11:03:54.339175, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 75?[0m
+get code Code{code='Snippet #10', date=2020-12-30T11:03:54.352140, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 76?[0m
+get code Code{code='Snippet #10', date=2020-12-30T11:03:54.352140, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 77?[0m
+get code Code{code='Snippet #11', date=2020-12-30T11:03:54.369094, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 78?[0m
+get code Code{code='Snippet #11', date=2020-12-30T11:03:54.369094, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 79?[0m
+get code Code{code='Snippet #12', date=2020-12-30T11:03:54.389042, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 80?[0m
+get code Code{code='Snippet #12', date=2020-12-30T11:03:54.389042, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 81?[0m
+get code Code{code='Snippet #13', date=2020-12-30T11:03:54.405996, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 82?[0m
+get code Code{code='Snippet #13', date=2020-12-30T11:03:54.405996, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 83?[0m
+get code Code{code='Snippet #14', date=2020-12-30T11:03:54.413975, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 84?[0m
+get code Code{code='Snippet #14', date=2020-12-30T11:03:54.413975, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 85?[0m
+get latest
+Code{code='Snippet #14', date=2020-12-30T11:03:54.413975, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #13', date=2020-12-30T11:03:54.405996, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #12', date=2020-12-30T11:03:54.389042, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #11', date=2020-12-30T11:03:54.369094, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #10', date=2020-12-30T11:03:54.352140, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #9', date=2020-12-30T11:03:54.339175, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #8', date=2020-12-30T11:03:54.324215, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #7', date=2020-12-30T11:03:54.310254, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #6', date=2020-12-30T11:03:54.299283, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #5', date=2020-12-30T11:03:54.289309, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #4', date=2020-12-30T11:03:54.272354, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #3', date=2020-12-30T11:03:54.257394, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='class Code { ...', date=2020-12-30T11:03:54.158660, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 86?[0m
+get latest
+Code{code='Snippet #14', date=2020-12-30T11:03:54.413975, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #13', date=2020-12-30T11:03:54.405996, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #12', date=2020-12-30T11:03:54.389042, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #11', date=2020-12-30T11:03:54.369094, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #10', date=2020-12-30T11:03:54.352140, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #9', date=2020-12-30T11:03:54.339175, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #8', date=2020-12-30T11:03:54.324215, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #7', date=2020-12-30T11:03:54.310254, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #6', date=2020-12-30T11:03:54.299283, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #5', date=2020-12-30T11:03:54.289309, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #4', date=2020-12-30T11:03:54.272354, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #3', date=2020-12-30T11:03:54.257394, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='class Code { ...', date=2020-12-30T11:03:54.158660, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 87?[0m
+create Code{code='Snippet #15', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 88?[0m
+create Code{code='Snippet #16', date=null, views=20, baseTime=0, baseViews=0, time=100}
+?[1;31m
+Start test 89?[0m
+create Code{code='Snippet #17', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 90?[0m
+create Code{code='Snippet #18', date=null, views=5, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 91?[0m
+create Code{code='Snippet #19', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 92?[0m
+create Code{code='Snippet #20', date=null, views=0, baseTime=0, baseViews=0, time=3}
+?[1;31m
+Start test 93?[0m
+create Code{code='Snippet #21', date=null, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 94?[0m
+create Code{code='Snippet #22', date=null, views=0, baseTime=0, baseViews=0, time=30}
+?[1;31m
+Start test 95?[0m
+get code Code{code='Snippet #15', date=2020-12-30T11:03:56.718563, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 96?[0m
+get code Code{code='Snippet #15', date=2020-12-30T11:03:56.718563, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 97?[0m
+get code Code{code='Snippet #17', date=2020-12-30T11:03:56.741502, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 98?[0m
+get code Code{code='Snippet #17', date=2020-12-30T11:03:56.741502, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 99?[0m
+get code Code{code='Snippet #19', date=2020-12-30T11:03:56.754468, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 100?[0m
+get code Code{code='Snippet #19', date=2020-12-30T11:03:56.754468, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 101?[0m
+get code Code{code='Snippet #21', date=2020-12-30T11:03:56.768431, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 102?[0m
+get code Code{code='Snippet #21', date=2020-12-30T11:03:56.768431, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 103?[0m
+2020-12-30 11:04:02.431  INFO 20776 --- [       Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-30 11:04:02.431  INFO 20776 --- [       Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-30 11:04:02.432  INFO 20776 --- [       Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2020-12-30 11:04:02.572  INFO 20776 --- [       Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.3.3.RELEASE)
+
+2020-12-30 11:04:02.624  INFO 20776 --- [    Test worker] platform.CodeSharingPlatform             : Starting CodeSharingPlatform on WCOR0705 with PID 20776 (started by KowalikM in C:\Users\kowalikm\IdeaProjects\Code Sharing Platform\Code Sharing Platform\task)
+2020-12-30 11:04:02.625  INFO 20776 --- [    Test worker] platform.CodeSharingPlatform             : No active profile set, falling back to default profiles: default
+2020-12-30 11:04:02.838  INFO 20776 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-30 11:04:02.845  INFO 20776 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6ms. Found 1 JPA repository interfaces.
+2020-12-30 11:04:02.915  INFO 20776 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2020-12-30 11:04:02.916  INFO 20776 --- [    Test worker] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-30 11:04:02.916  INFO 20776 --- [    Test worker] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-30 11:04:02.950  INFO 20776 --- [    Test worker] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-30 11:04:02.951  INFO 20776 --- [    Test worker] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 324 ms
+2020-12-30 11:04:02.985  INFO 20776 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2020-12-30 11:04:02.993  INFO 20776 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2020-12-30 11:04:02.994  INFO 20776 --- [    Test worker] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:../snippets'
+2020-12-30 11:04:03.084  INFO 20776 --- [    Test worker] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-30 11:04:03.084  INFO 20776 --- [         task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-30 11:04:03.084  INFO 20776 --- [         task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-12-30 11:04:03.115  WARN 20776 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-30 11:04:03.146  INFO 20776 --- [         task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-30 11:04:03.146  INFO 20776 --- [         task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-30 11:04:03.302  INFO 20776 --- [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2020-12-30 11:04:03.318  INFO 20776 --- [    Test worker] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2020-12-30 11:04:03.318  INFO 20776 --- [    Test worker] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-30 11:04:03.334  INFO 20776 --- [    Test worker] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-30 11:04:03.349  INFO 20776 --- [    Test worker] platform.CodeSharingPlatform             : Started CodeSharingPlatform in 0.769 seconds (JVM running for 16.21)
+?[1;31m
+Start test 104?[0m
+?[1;31m
+Start test 105?[0m
+2020-12-30 11:04:03.349  INFO 20776 --- [nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-30 11:04:03.349  INFO 20776 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-30 11:04:03.365  INFO 20776 --- [nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+get code Code{code='Snippet #16', date=2020-12-30T11:03:56.730532, views=20, baseTime=100, baseViews=20, time=100}
+?[1;31m
+Start test 106?[0m
+get code Code{code='Snippet #16', date=2020-12-30T11:03:56.730532, views=19, baseTime=100, baseViews=20, time=94}
+?[1;31m
+Start test 107?[0m
+get code Code{code='Snippet #18', date=2020-12-30T11:03:56.748485, views=5, baseTime=0, baseViews=5, time=0}
+?[1;31m
+Start test 108?[0m
+get code Code{code='Snippet #18', date=2020-12-30T11:03:56.748485, views=4, baseTime=0, baseViews=5, time=0}
+?[1;31m
+Start test 109?[0m
+get code Code{code='Snippet #20', date=2020-12-30T11:03:56.762446, views=0, baseTime=3, baseViews=0, time=3}
+?[1;31m
+Start test 110?[0m
+get code Code{code='Snippet #20', date=2020-12-30T11:03:56.762446, views=0, baseTime=3, baseViews=0, time=3}
+?[1;31m
+Start test 111?[0m
+get code Code{code='Snippet #22', date=2020-12-30T11:03:56.775413, views=0, baseTime=30, baseViews=0, time=30}
+?[1;31m
+Start test 112?[0m
+get code Code{code='Snippet #22', date=2020-12-30T11:03:56.775413, views=0, baseTime=30, baseViews=0, time=24}
+?[1;31m
+Start test 113?[0m
+get latest
+Code{code='Snippet #21', date=2020-12-30T11:03:56.768431, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #19', date=2020-12-30T11:03:56.754468, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #17', date=2020-12-30T11:03:56.741502, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #15', date=2020-12-30T11:03:56.718563, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #14', date=2020-12-30T11:03:54.413975, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #13', date=2020-12-30T11:03:54.405996, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #12', date=2020-12-30T11:03:54.389042, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #11', date=2020-12-30T11:03:54.369094, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #10', date=2020-12-30T11:03:54.352140, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #9', date=2020-12-30T11:03:54.339175, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #8', date=2020-12-30T11:03:54.324215, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #7', date=2020-12-30T11:03:54.310254, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #6', date=2020-12-30T11:03:54.299283, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #5', date=2020-12-30T11:03:54.289309, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #4', date=2020-12-30T11:03:54.272354, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #3', date=2020-12-30T11:03:54.257394, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='class Code { ...', date=2020-12-30T11:03:54.158660, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 114?[0m
+get latest
+Code{code='Snippet #21', date=2020-12-30T11:03:56.768431, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #19', date=2020-12-30T11:03:56.754468, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #17', date=2020-12-30T11:03:56.741502, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #15', date=2020-12-30T11:03:56.718563, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #14', date=2020-12-30T11:03:54.413975, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #13', date=2020-12-30T11:03:54.405996, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #12', date=2020-12-30T11:03:54.389042, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #11', date=2020-12-30T11:03:54.369094, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #10', date=2020-12-30T11:03:54.352140, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #9', date=2020-12-30T11:03:54.339175, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #8', date=2020-12-30T11:03:54.324215, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #7', date=2020-12-30T11:03:54.310254, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #6', date=2020-12-30T11:03:54.299283, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #5', date=2020-12-30T11:03:54.289309, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #4', date=2020-12-30T11:03:54.272354, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='Snippet #3', date=2020-12-30T11:03:54.257394, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='class Code { ...', date=2020-12-30T11:03:54.158660, views=0, baseTime=0, baseViews=0, time=0}
+Code{code='public static void ...', date=2020-12-30T11:03:53.628084, views=0, baseTime=0, baseViews=0, time=0}
+?[1;31m
+Start test 115?[0m
+get code Code{code='Snippet #18', date=2020-12-30T11:03:56.748485, views=3, baseTime=0, baseViews=5, time=0}
+?[1;31m
+Start test 116?[0m
+get code Code{code='Snippet #18', date=2020-12-30T11:03:56.748485, views=2, baseTime=0, baseViews=5, time=0}
+?[1;31m
+Start test 117?[0m
+get code Code{code='Snippet #18', date=2020-12-30T11:03:56.748485, views=1, baseTime=0, baseViews=5, time=0}
+?[1;31m
+Start test 118?[0m
+get code Code{code='Snippet #18', date=2020-12-30T11:03:56.748485, views=0, baseTime=0, baseViews=5, time=0}
+?[1;31m
+Start test 119?[0m
+get code Code{code='Snippet #18', date=2020-12-30T11:03:56.748485, views=0, baseTime=0, baseViews=5, time=0}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
